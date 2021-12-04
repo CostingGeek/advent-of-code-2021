@@ -7,4 +7,4 @@ I chose **PHP** as this is the language I have most experience with. The code ru
 
 Day | Part One | Part Two
 -----|-----|-----
-[Day 1: Report Repair](https://adventofcode.com/2021/day/1) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-01/script_1.php) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-01/script_2.php)
+[Day 1: Sonar Sweep](https://adventofcode.com/2021/day/1) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-01/script_1.php) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-01/script_2.php)
