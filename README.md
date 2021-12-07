@@ -8,3 +8,5 @@ I chose **PHP** as this is the language I have most experience with. The code ru
 Day | Part One | Part Two
 -----|-----|-----
 [Day 1: Sonar Sweep](https://adventofcode.com/2021/day/1) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-01/script_1.php) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-01/script_2.php)
+[Day 2: Dive!](https://adventofcode.com/2021/day/2) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-02/script_1.php) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-02/script_2.php)
+[Day 3: Binary Diagnostic](https://adventofcode.com/2021/day/3) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-03/script_1.php) | [:heavy_check_mark:](https://github.com/CostingGeek/advent-of-code-2021/blob/main/day-03/script_2.php)
