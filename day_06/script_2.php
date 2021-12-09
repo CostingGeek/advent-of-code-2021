@@ -1,41 +1,36 @@
 <?php
 $list = '3,4,3,1,2';
 
+function init_array( $max ) {
+    
+    $array_tmp = array();
+    for( $i = 0; $i < $max; $i++ )
+    {
+        $array_tmp[$i] = 0;
+    }
+    
+    return $array_tmp;
+}
+
+$fish_list = init_array( 10 );
+
 $list_array = explode(",", $list);
-
-$day = 0;
-echo $day.": ".$list."\r\n";
-
-function next_day( $day, $list_array ) {
-
-    echo $day.": ";
-
-    $list_tmp = array();
-    $list_new = array();
-    foreach( $list_array as $key => $line ) {
-        $list_tmp[$key] = $line - 1;  
-        
-        if( $list_tmp[$key] < 0 ) {
-            $list_tmp[$key] = 6;
-            $list_new[] = 8;
-        }
-        
-        echo $list_tmp[$key].","; 
-    }
-
-    foreach( $list_new as $key => $line ) {
-        echo $line.","; 
-    }
-    
-    echo "\r\n";
-    
-    $list_tmp = array_merge( $list_tmp, $list_new );
-    return $list_tmp;
+foreach( $list_array as $line ) {
+  $fish_list[$line]++;  
 }
 
-for( $i = 0; $i < 256; $i++ ) {
-    $day++;
-    $list_array = next_day( $day, $list_array );
+for( $day = 0; $day < 256; $day++ ) {
+
+  $fish_list_new = init_array( 10 );
+  for( $i = 0; $i < 8; $i++ )
+  {
+      $fish_list_new[$i] = $fish_list[$i+1];
+  }
+  $fish_list_new[6] = $fish_list_new[6] + $fish_list[0];
+  $fish_list_new[8] = $fish_list[0];
+
+    $fish_list = $fish_list_new;
 }
 
-echo 'Nb Fish: '.count( $list_array )."\r\n";
+echo array_sum( $fish_list_new );
+?>
